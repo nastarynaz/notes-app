@@ -4,7 +4,7 @@ import { showFormattedDate } from '../utils';
 
 function NoteList({ notes, onDelete, onArchive }) {
     return (
-        <div className='note-list'>
+        <div className='notes-list'>
             {
                 notes.map((note) => (
                     <NoteItem

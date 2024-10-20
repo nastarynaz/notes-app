@@ -58,13 +58,13 @@ class NoteApp extends React.Component {
         
         return (
             <div className='note-app'>
-                <header className='notes-app__header'>
+                <div className='note-app__header'>
                     <h1>Notes</h1>
                     <div className='note-search'>
                         <input type="text" placeholder='Cari catatan...' onChange={this.onSearchHandler}/>
                     </div>
-                </header>
-                <main className='note-app__body'>
+                </div>
+                <div className='note-app__body'>
                     <div className='note-input'>
                         <h2>Buat Catatan</h2>
                         <NoteInput addNote={this.onAddNoteHandler} />
@@ -88,7 +88,7 @@ class NoteApp extends React.Component {
                     ) : (
                         <div className='note-list__empty-message'>Tidak ada catatan.</div>
                     )}
-                </main>
+                </div>
             </div>
         );
     }
